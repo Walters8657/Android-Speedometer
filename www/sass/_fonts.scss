@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Overpass";
+    src: url("../css/fonts/overpass-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Overpass Bold";
+    src: url("../css/fonts/overpass-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Overpass Black";
+    src: url("../css/fonts/overpass-regular-webfont.woff") format("woff");
+}
+
+$regular: "Overpass", sans-serif;
+$bold: "Overpass Bold", sans-serif;
+$black: "Overpass Black", sans-serif;
+
+h1 {
+    font-size: 180px;
+}
+
+p {
+    font-size: 36px;
+}

@@ -1,0 +1,141 @@
+@import 'meyer';
+@import 'variables';
+@import 'fonts';
+@import 'classes';
+@import 'settings';
+
+* {
+    box-sizing: border-box;
+    color: $white;
+    -webkit-transition: background-color .3s ease-out, color .3s ease-out, box-shadow .3s ease-out;
+    transition: background-color .3s ease-out, color .3s ease-out, box-shadow .3s ease-out;
+}
+
+body {
+    font-family: $regular;
+    background-color: #1f1f1f;
+    color: $white;
+}
+
+input {
+    color: $white;
+    background-color: #3B3B3B;
+    border-radius: 10px;
+    border-color: $white;
+    padding: 5px;
+    font-size: 20px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $white;
+    opacity: 0.75; /* Firefox */
+}
+
+button {
+    color: $white;
+    background-color: $green;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+
+#settingsIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#speedometer {
+    width: 260px;
+    height: 260px;
+    border-radius: 1000px;
+    margin: 60px auto;
+    text-align: center;
+
+    #currentSpeed {
+        font-weight: bold;
+
+        margin-bottom: 0px;
+        padding: 90px 0px 0px;
+        line-height: 120px;
+    }
+
+    p {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+}
+
+#speedLimit {
+    text-align: center;
+    label {
+        display: block;
+        margin: 15px;
+        font-size: 24px;
+    }
+    p {
+        font-size: 48px;
+        font-weight: bolder;
+    }
+}
+
+#warnings {
+    display: block;
+    width: 322.52px;
+    margin: auto;
+
+    div {
+        display: inline-block;
+
+        width: 65px;
+        height: 65px;
+        border-radius: 69420px;
+        margin: 20px;
+    }
+}
+
+#contactNotified {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: rgba($gray, 0.8);
+    text-align: center;
+
+    div {
+        position: relative;
+        top: calc(30vh);
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            margin: 24px;
+            padding: 12px;
+            font-size: 18px;
+            background-color: $green;
+            border: none;
+            color: $white;
+        }
+    }
+
+
+    &.hidden {
+        display: none;
+        pointer-events: none;
+    }
+}

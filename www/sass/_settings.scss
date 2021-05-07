@@ -1,0 +1,69 @@
+//@import 'variables';
+//@import 'fonts';
+//@import 'classes';
+
+#passcode {
+    display: none;
+    background-color: $gray;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+    width: 100vw;
+    height: 100vh;
+    div {
+        margin-top: 40px;
+    }
+    input {
+        margin: 20px;
+    }
+    #setPinBtn {
+        margin: 20px auto 40px;
+    }
+}
+
+#settings {
+    display: none;
+    background-color: $gray;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    text-align: center;
+
+    width: 100vw;
+    height: 100vh;
+    p {
+        margin-top: 15px;
+    }
+    hr {
+        width: 66%;
+    }
+    div {
+        text-align: left;
+        padding-left: 20px;
+        p {
+            font-size: 20px;
+            display: inline-block;
+        }
+        input {
+            display: block;
+            position: relative;
+            top: -30px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        input:nth-of-type(1) {
+            width: 200px;
+        }
+        input:nth-of-type(2), input:nth-of-type(3), input:nth-of-type(4) {
+            width: 75px;
+        }
+    }
+    #closeSettings {
+        display: inline-block;
+    }
+}
